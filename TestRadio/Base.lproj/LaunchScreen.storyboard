@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,15 +12,43 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="radio" translatesAutoresizingMaskIntoConstraints="NO" id="J15-75-OMl">
+                                <rect key="frame" x="0.0" y="44" width="414" height="446"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="J15-75-OMl" secondAttribute="height" multiplier="207:223" id="I3l-C3-0t1"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="簡易電台Demo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="llG-eh-3km">
+                                <rect key="frame" x="0.0" y="564" width="414" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="llG-eh-3km" secondAttribute="height" multiplier="414:125" id="li1-nu-N1e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="52"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="llG-eh-3km" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="88V-Jz-KHJ"/>
+                            <constraint firstItem="J15-75-OMl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="AtS-WE-Fad"/>
+                            <constraint firstItem="J15-75-OMl" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="P2v-hT-VbX"/>
+                            <constraint firstItem="llG-eh-3km" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Vod-7C-aa7"/>
+                            <constraint firstItem="llG-eh-3km" firstAttribute="top" secondItem="J15-75-OMl" secondAttribute="bottom" constant="74" id="ke0-G8-UeC"/>
+                            <constraint firstItem="J15-75-OMl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nCc-8Q-G13"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="radio" width="400" height="400"/>
+    </resources>
 </document>
